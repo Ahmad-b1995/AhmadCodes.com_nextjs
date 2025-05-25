@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutSection from './AboutSection';
 import ExperienceSection from './ExperienceSection';
-// import Blog from './Blog';
+import Blog from './Blog';
 
 const Main = () => {
     return (
@@ -9,7 +9,7 @@ const Main = () => {
             <AboutSection />
             <ExperienceSection />
             {/* <ProjectSection /> */}
-            {/* <Blog/> */}
+            <Blog/>
         </main>
     );
 };
