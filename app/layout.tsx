@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmad Baghereslami",
+  title: "Ahmad Bagheri",
   description:
-    "Ahmad Baghereslami is a software engineer who builds accessible, inclusive products and digital experiences for the web.",
+    "Ahmad Bagheri is a software engineer who builds accessible, inclusive products and digital experiences for the web.",
 };
 
 export default function RootLayout({

@@ -9,7 +9,7 @@ const Header = () => {
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-[#2079C7] sm:text-5xl">
-          <Link href="/">Ahmad Baghereslami</Link>
+          <Link href="/">Ahmad Bagheri</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-[#2079C7] sm:text-xl">
           Full Stack Developer
@@ -37,7 +37,7 @@ const Header = () => {
         <li className="mr-5 text-xs shrink-0">
           <Link
             className="block hover:text-slate-300"
-            href="https://www.linkedin.com/in/ahmad-baghereslami/"
+            href="https://www.linkedin.com/in/ahmad-Bagheri/"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="LinkedIn (opens in a new tab)"
