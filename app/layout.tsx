@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmad Baghereslami - Full Stack Developer",
-  description: "Full Stack Developer specializing in React, Node.js, and Python",
+  title: "Ahmad Bagheri - Senior Full Stack Developer",
+  description: "7 years of experience as a senior full-stack developer specializing in building scalable ERP web solutions. Expert in Next.js, TypeScript, Django, and GraphQL across cryptocurrency, e-commerce, and enterprise applications.",
 };
 
 export default function RootLayout({

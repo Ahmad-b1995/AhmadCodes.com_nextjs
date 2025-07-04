@@ -16,16 +16,16 @@ const AboutSection = () => {
         </div>
         <div>
           <p className="mb-4">
-            With over seven years of experience as a senior Full Stack Developer, I have been privileged to build over 10 web applications from scratch, all of which were built with scalability and future growth in mind. This journey has taken me through five different startups, each uniquely challenging and presenting unique opportunities. These experiences honed my ability to think ahead, design for the future, and make sure that the solutions I build could grow as fast as the companies they supported.
+            With 7 years of experience as a senior full-stack developer, I specialize in building scalable ERP web solutions for startups across diverse sectors including cryptocurrency, e-commerce, and enterprise applications. My expertise spans modern technologies such as Next.js, TypeScript, Django, and GraphQL, enabling me to deliver comprehensive solutions that drive business growth.
           </p>
           <p className="mb-4">
-            I prefer to work in places that value initiative on their merits. Be it with processes, stress-testing Continuous Integration/Continuous Deployment pipelines, or workflows, for good measure, I am constantly investigating room for improvement. I&apos;d go deep into the deep core of a project structure, ensuring every decision fits into a reason that feels coherent with the best practice in engineering and industry standard standards. My focus would go toward setting up something to last: a product able to scale and to grow without compromise.
+            Throughout my career, I've achieved significant milestones including revamping DexTrading's web application with a 200% site speed increase and 50% user engagement boost. I successfully redesigned and launched their blog, resulting in a 500% increase in daily traffic and 200% improvement in user conversions. At Azer Tech, I optimized API performance by 50%, substantially enhancing platform efficiency and user satisfaction.
           </p>
           <p className="mb-4">
-            Problem-solving is my happy place. Throw a challenge my way, and I&apos;ll not only find a solution but likely enjoy the process a little too much! Analytical thinking comes naturally, but so does creativity-an essential trait when you&apos;ve spent as much time in startups as I have. Navigating the fast-paced, ever-changing world of entrepreneurship has sharpened my ability to adapt quickly, deliver effectively, and make a meaningful impact in lean, high-energy environments.
+            Currently at Barriertek, I'm developing a comprehensive ERP system from scratch using React, NestJS, and PostgreSQL. This system replaces manual processes and eliminates phone-based communication, projected to serve 500+ users while reducing operational costs. I've successfully onboarded 156+ customers with advanced features including real-time updates, NetSuite integration, and multi-platform support.
           </p>
           <p className="mb-4">
-            Beyond code, I have an eye for the design of UI/UX, where intuitive and aesthetically engaging user interfaces are hooked together by great form and function. Every project is an opportunity to shape architecture, mentor teams, and craft clean, efficient code. I love the dynamic energy of startups, bringing passion and commitment to every challenge and opportunity.
+            My approach combines technical excellence with leadership skills, having led teams of up to 3 developers while collaborating effectively in larger groups of 15+ members. I'm passionate about implementing CI/CD pipelines, optimizing performance, and creating scalable DevOps infrastructure. Whether working with PostgreSQL, Docker, or cloud platforms, I focus on building solutions that are both innovative and maintainable.
           </p>
         </div>
       </section>

@@ -9,15 +9,15 @@ const Header = () => {
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
         <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-5xl">
-          <Link href="/">Ahmad Baghereslami</Link>
+          <Link href="/">Ahmad Bagheri</Link>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-primary sm:text-xl">
-          Full Stack Developer
+          Senior Full Stack Developer
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          Building scalable full-stack applications with a strong foundation in
-          front-end development. Experienced in React, Node.js, and Python,
-          focused on creating efficient and maintainable code.
+          7 years of experience building scalable ERP web solutions for startups. 
+          Specializing in Next.js, TypeScript, Django, and GraphQL across 
+          cryptocurrency, e-commerce, and enterprise applications.
         </p>
         <NavigationLinks /> 
       </div>
@@ -49,7 +49,7 @@ const Header = () => {
         <li className="mr-5 text-xs shrink-0">
         <Link
             className="block hover:text-slate-300"
-            href="mailto:ahmad.b1995@gmail.com"
+            href="mailto:ahmadbagheri.dev@gmail.com"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="Email (opens in a new tab)"
