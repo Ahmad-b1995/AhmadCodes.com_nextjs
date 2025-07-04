@@ -25,11 +25,11 @@ const Blog = async () => {
           <ul className="group/list">
             {articles.slice(0, 5).map((article) => (
               <li key={article.id} className="mb-12">
-                <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:bg-blue-100/50 hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg rounded-md p-4">
+                <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50 hover:bg-primary-100/50 hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg rounded-md p-4">
                   <div className="z-10 sm:order-2 sm:col-span-6">
                     <h3>
                       <a
-                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-blue-300 focus-visible:text-blue-300 group/link text-base"
+                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-primary-300 focus-visible:text-primary-300 group/link text-base"
                         href={article.id.toString()}
                         target="_blank"
                         rel="noreferrer noopener"
@@ -59,14 +59,29 @@ const Blog = async () => {
           </ul>
           <div className="mt-12">
             <Link
-              className="inline-flex items-baseline leading-tight hover:text-blue-300 focus-visible:text-blue-300 font-semibold text-slate-400 group/link text-base"
+              className="inline-flex items-baseline leading-tight hover:text-primary-300 focus-visible:text-primary-300 font-semibold text-slate-400 group/link text-base"
               href="https://drive.google.com/file/d/1MkYlq4cLPWFTqDk0x4ZWghZNsXPUhxu9/view?usp=drive_link"
               target="_blank"
               rel="noreferrer noopener"
-              aria-label="View Full Résumé (opens in a new tab)"
+              aria-label="View Full Blog Archive (opens in a new tab)"
             >
               <span>
-                View All <span className="inline-block">Articles</span>
+                View Full Blog Archive{" "}
+                <span className="inline-block">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                      clipRule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
               </span>
             </Link>
           </div>

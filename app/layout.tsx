@@ -10,9 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmad Bagheri",
-  description:
-    "Ahmad Bagheri is a software engineer who builds accessible, inclusive products and digital experiences for the web.",
+  title: "Ahmad Baghereslami - Full Stack Developer",
+  description: "Full Stack Developer specializing in React, Node.js, and Python",
 };
 
 export default function RootLayout({
@@ -23,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body
-        className="scroll-smooth leading-relaxed text-slate-600 selection:bg-blue-100 selection:text-teal-900
+        className="scroll-smooth leading-relaxed text-slate-600 selection:bg-primary-100 selection:text-teal-900
          mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0 antialiased"
       >
         {children}
