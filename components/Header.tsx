@@ -24,7 +24,7 @@ const Header = () => {
       <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
         <li className="mr-5 text-xs shrink-0">
           <Link
-            className="block hover:text-slate-300"
+            className="block hover:text-primary-300"
             href="https://github.com/Ahmad-b1995"
             target="_blank"
             rel="noreferrer noopener"
@@ -36,7 +36,7 @@ const Header = () => {
         </li>
         <li className="mr-5 text-xs shrink-0">
           <Link
-            className="block hover:text-slate-300"
+            className="block hover:text-primary-300"
             href="https://www.linkedin.com/in/ahmad-baghereslami/"
             target="_blank"
             rel="noreferrer noopener"
@@ -48,7 +48,7 @@ const Header = () => {
         </li>
         <li className="mr-5 text-xs shrink-0">
         <Link
-            className="block hover:text-slate-300"
+            className="block hover:text-primary-300"
             href="mailto:ahmadbagheri.dev@gmail.com"
             target="_blank"
             rel="noreferrer noopener"
