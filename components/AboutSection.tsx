@@ -19,13 +19,13 @@ const AboutSection = () => {
             With 7 years of experience as a senior full-stack developer, I specialize in building scalable ERP web solutions for startups across diverse sectors including cryptocurrency, e-commerce, and enterprise applications. My expertise spans modern technologies such as Next.js, TypeScript, Django, and GraphQL, enabling me to deliver comprehensive solutions that drive business growth.
           </p>
           <p className="mb-4">
-            Throughout my career, I've achieved significant milestones including revamping DexTrading's web application with a 200% site speed increase and 50% user engagement boost. I successfully redesigned and launched their blog, resulting in a 500% increase in daily traffic and 200% improvement in user conversions. At Azer Tech, I optimized API performance by 50%, substantially enhancing platform efficiency and user satisfaction.
+            Throughout my career, I&apos;ve achieved significant milestones including revamping DexTrading&apos;s web application with a 200% site speed increase and 50% user engagement boost. I successfully redesigned and launched their blog, resulting in a 500% increase in daily traffic and 200% improvement in user conversions. At Azer Tech, I optimized API performance by 50%, substantially enhancing platform efficiency and user satisfaction.
           </p>
           <p className="mb-4">
-            Currently at Barriertek, I'm developing a comprehensive ERP system from scratch using React, NestJS, and PostgreSQL. This system replaces manual processes and eliminates phone-based communication, projected to serve 500+ users while reducing operational costs. I've successfully onboarded 156+ customers with advanced features including real-time updates, NetSuite integration, and multi-platform support.
+            Currently at Barriertek, I&apos;m developing a comprehensive ERP system from scratch using React, NestJS, and PostgreSQL. This system replaces manual processes and eliminates phone-based communication, projected to serve 500+ users while reducing operational costs. I&apos;ve successfully onboarded 156+ customers with advanced features including real-time updates, NetSuite integration, and multi-platform support.
           </p>
           <p className="mb-4">
-            My approach combines technical excellence with leadership skills, having led teams of up to 3 developers while collaborating effectively in larger groups of 15+ members. I'm passionate about implementing CI/CD pipelines, optimizing performance, and creating scalable DevOps infrastructure. Whether working with PostgreSQL, Docker, or cloud platforms, I focus on building solutions that are both innovative and maintainable.
+            My approach combines technical excellence with leadership skills, having led teams of up to 3 developers while collaborating effectively in larger groups of 15+ members. I&apos;m passionate about implementing CI/CD pipelines, optimizing performance, and creating scalable DevOps infrastructure. Whether working with PostgreSQL, Docker, or cloud platforms, I focus on building solutions that are both innovative and maintainable.
           </p>
         </div>
       </section>

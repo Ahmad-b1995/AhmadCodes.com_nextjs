@@ -1,6 +1,5 @@
 import React from "react";
 import NavigationWrapper from "./NavigationWrapper";
-import Link from "next/link";
 
 const ExperienceSection = () => {
   return (
