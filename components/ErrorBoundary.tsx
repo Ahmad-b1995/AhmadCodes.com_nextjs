@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactNode, Component, ErrorInfo } from "react";
+import React, { ReactNode } from "react";
 
 interface Props {
   children: ReactNode;
@@ -7,11 +7,6 @@ interface Props {
   title?: string;
   showDigest?: boolean;
   onReset?: () => void;
-}
-
-interface ErrorBoundaryState {
-  hasError: boolean;
-  error?: Error;
 }
 
 const ErrorFallback = ({ 
