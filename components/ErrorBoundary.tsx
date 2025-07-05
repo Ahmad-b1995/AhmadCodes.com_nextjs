@@ -101,8 +101,6 @@ const ErrorFallback = ({
 const ErrorBoundaryComponent = ({ 
   children, 
   fallback, 
-  title = "Oops! Something went wrong",
-  showDigest = false,
   onReset 
 }: Props) => {
   const handleError = (error: Error, errorInfo: ErrorInfo) => {
