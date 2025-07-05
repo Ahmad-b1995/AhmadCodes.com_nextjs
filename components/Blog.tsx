@@ -1,13 +1,13 @@
 import React from "react";
 import NavigationWrapper from "./NavigationWrapper";
 import Image from "next/image";
-import { getAllPosts } from "@/http/article.http";
+import { getAllArticles } from "@/http/article.http";
 import { connection } from "next/server";
 import Link from "next/link";
 
 const Blog = async () => {
   await connection()
-  const articles = await getAllPosts().then(data => data);
+  const articles = await getAllArticles().then(data => data);
 
   return (
     <NavigationWrapper elementName="blog">
