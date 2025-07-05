@@ -1,5 +1,7 @@
 "use client";
-import React, { ReactNode } from "react";
+import React, { ErrorInfo, ReactNode } from "react";
+import { ErrorBoundary } from "react-error-boundary";
+
 
 interface Props {
   children: ReactNode;
@@ -96,25 +98,27 @@ const ErrorFallback = ({
 );
 
 
-const ErrorBoundary = ({ 
+const ErrorBoundaryComponent = ({ 
   children, 
   fallback, 
   title = "Oops! Something went wrong",
   showDigest = false,
   onReset 
 }: Props) => {
+  const handleError = (error: Error, errorInfo: ErrorInfo) => {
+    console.error("Error caught by boundary:", error, errorInfo);
+  };
 
   return (
     <ErrorBoundary
       fallback={fallback}
-      title={title}
-      showDigest={showDigest}
       onReset={onReset}
+      onError={handleError}
     >
       {children}
     </ErrorBoundary>
   );
 };
 
-export default ErrorBoundary;
+export default ErrorBoundaryComponent;
 export { ErrorFallback }; 
