@@ -37,7 +37,7 @@ const Header = () => {
         <li className="mr-5 text-xs shrink-0">
           <Link
             className="block text-slate-600 dark:text-slate-400 hover:text-primary-300"
-            href="https://www.linkedin.com/in/ahmad-baghereslami/"
+            href="https://www.linkedin.com/in/ahmad-bagheri/"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="LinkedIn (opens in a new tab)"
