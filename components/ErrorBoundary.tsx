@@ -37,7 +37,7 @@ class ErrorBoundary extends Component<Props, State> {
   }
 
   handleReset = () => {
-    this.setState({ hasError: false, error: undefined, errorInfo: undefined });
+    window.location.reload();
   };
 
   render() {
@@ -72,7 +72,14 @@ class ErrorBoundary extends Component<Props, State> {
                 Oops! Something went wrong
               </h1>
               <p className="text-slate-600 dark:text-slate-400 mb-6">
-                We encountered an unexpected error. Please try refreshing the page or contact support if the problem persists.
+                We encountered an unexpected error. Please try refreshing the page or email me at{" "}
+                <a 
+                  href="mailto:ahmad@ahmadcodes.com" 
+                  className="text-primary-600 dark:text-primary-400 hover:underline"
+                >
+                  ahmad@ahmadcodes.com
+                </a>{" "}
+                if the problem persists.
               </p>
             </div>
 
@@ -85,10 +92,10 @@ class ErrorBoundary extends Component<Props, State> {
               </button>
               
               <button
-                onClick={() => window.location.reload()}
+                onClick={() => window.location.href = "/"}
                 className="w-full bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 dark:focus:ring-offset-slate-950"
               >
-                Refresh Page
+                Go Home
               </button>
             </div>
 

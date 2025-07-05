@@ -37,13 +37,20 @@ export default function Error({
             Something went wrong!
           </h1>
           <p className="text-slate-600 dark:text-slate-400 mb-6">
-            We encountered an unexpected error. Please try again or contact support if the problem persists.
+            We encountered an unexpected error. Please try again or email me at{" "}
+            <a 
+              href="mailto:ahmad@ahmadcodes.com" 
+              className="text-primary-600 dark:text-primary-400 hover:underline"
+            >
+              ahmad@ahmadcodes.com
+            </a>{" "}
+            if the problem persists.
           </p>
         </div>
 
         <div className="space-y-4">
           <button
-            onClick={reset}
+            onClick={() => window.location.reload()}
             className="w-full bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-slate-950"
           >
             Try Again
@@ -70,7 +77,7 @@ export default function Error({
                 <div className="mb-2">
                   <strong>Digest:</strong> {error.digest}
                 </div>
-              )}
+                )}
               <div>
                 <strong>Stack:</strong>
                 <pre className="mt-1 whitespace-pre-wrap text-xs">{error.stack}</pre>
