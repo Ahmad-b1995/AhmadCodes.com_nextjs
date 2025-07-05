@@ -58,7 +58,7 @@ class SectionErrorBoundary extends Component<Props, State> {
               {this.props.sectionName ? `Error in ${this.props.sectionName}` : "Section Error"}
             </h3>
             <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
-              This section couldn't load properly. You can try refreshing or continue browsing other sections.
+              This section couldn&apos;t load properly. You can try refreshing or continue browsing other sections.
             </p>
             <button
               onClick={this.handleReset}
