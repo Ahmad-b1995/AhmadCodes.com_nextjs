@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
+import ErrorBoundary from "@/components/ErrorBoundary";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
-// Import the Inter font from Google Fonts
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"]
 });
 
 export const metadata: Metadata = {
@@ -20,12 +20,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={inter.className} suppressHydrationWarning>
       <body
         className="scroll-smooth leading-relaxed text-slate-600 selection:bg-primary-100 selection:text-primary-900
          mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0 antialiased"
       >
-        {children}
+        <ErrorBoundary>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {children}
+            <ThemeToggle />
+          </ThemeProvider>
+        </ErrorBoundary>
       </body>
     </html>
   );
