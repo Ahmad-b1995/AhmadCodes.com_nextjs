@@ -21,7 +21,7 @@ const Blog = async () => {
             Blog
           </h2>
         </div>
-        
+
         <ul className="group/list">
           {articles.slice(0, 5).map((article) => (
             <li key={article.id} className="mb-12">
@@ -40,15 +40,13 @@ const Blog = async () => {
                       <span>{article.title}</span>
                     </a>
                   </h3>
-                  <p className="mt-2 text-sm leading-normal text-slate-700 dark:text-slate-400">
-                    {article.description}
-                  </p>
+
                 </div>
                 <Image
                   alt={article.image.alt}
                   loading="lazy"
-                  width={article.image.width}
-                  height={article.image.height}
+                  width={300}
+                  height={300}
                   decoding="async"
                   className="rounded border-2 border-slate-200/10 dark:border-slate-700/10 transition group-hover:border-slate-200/30 dark:group-hover:border-slate-700/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                   style={{ color: "transparent" }}
@@ -58,7 +56,7 @@ const Blog = async () => {
             </li>
           ))}
         </ul>
-        
+
         <div className="mt-12">
           <Link
             className="inline-flex items-center font-medium leading-tight text-slate-800 dark:text-slate-100 hover:text-primary-600 dark:hover:text-primary-300 focus-visible:text-primary-600 dark:focus-visible:text-primary-300 group"
