@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // env: {
+  //   BASE_URL: process.env.BASE_URL || 'http://localhost:3001',
+  //   NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000',
+  // },
 };
 
 export default nextConfig;

@@ -13,9 +13,19 @@ export async function getAllArticles(
 // Function to find article by ID
 export async function findArticleById(
   id: number | string
-): Promise<{ data: any }> {
-  return fetchData<{ data: any }>(
+): Promise<Article> {
+  return fetchData<Article>(
     `${process.env.BASE_URL}/articles/${id}`,
+    { method: "GET" }
+  );
+}
+
+// Function to find article by slug
+export async function getArticleBySlug(
+  slug: string
+): Promise<Article> {
+  return fetchData<Article>(
+    `${process.env.BASE_URL}/articles/slug/${slug}`,
     { method: "GET" }
   );
 }

@@ -29,17 +29,46 @@ const Blog = async () => {
                 <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-100/50 dark:lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                 <div className="z-10 sm:order-2 sm:col-span-6">
                   <h3>
-                    <a
+                    <Link
                       className="inline-flex items-baseline font-medium leading-tight text-slate-800 dark:text-slate-100 hover:text-primary-600 dark:hover:text-primary-300 focus-visible:text-primary-600 dark:focus-visible:text-primary-300 group/link text-base"
-                      href={article.id.toString()}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      aria-label={`${article.title} (opens in a new tab)`}
+                      href={`/blog/${article.slug}`}
+                      aria-label={`${article.title}`}
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                       <span>{article.title}</span>
-                    </a>
+                    </Link>
                   </h3>
+                  
+                  {article.excerpt && (
+                    <p className="mt-2 text-sm leading-normal text-slate-600 dark:text-slate-400">
+                      {article.excerpt}
+                    </p>
+                  )}
+
+                  <div className="mt-2 flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
+                    {article.publishedAt && (
+                      <time dateTime={article.publishedAt}>
+                        {new Date(article.publishedAt).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'short',
+                          day: 'numeric'
+                        })}
+                      </time>
+                    )}
+                    
+                    {article.tags && article.tags.length > 0 && (
+                      <div className="flex gap-1">
+                        {article.tags.slice(0, 3).map((tag) => (
+                          <span 
+                            key={tag}
+                            className="px-1.5 py-0.5 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 rounded text-xs"
+                          >
+                            #{tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
 
                 </div>
                 <Image
@@ -60,10 +89,8 @@ const Blog = async () => {
         <div className="mt-12">
           <Link
             className="inline-flex items-center font-medium leading-tight text-slate-800 dark:text-slate-100 hover:text-primary-600 dark:hover:text-primary-300 focus-visible:text-primary-600 dark:focus-visible:text-primary-300 group"
-            href="https://drive.google.com/file/d/1MkYlq4cLPWFTqDk0x4ZWghZNsXPUhxu9/view?usp=drive_link"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="View Full Blog Archive (opens in a new tab)"
+            href="/blog"
+            aria-label="View Full Blog Archive"
           >
             <span>
               <span className="border-b border-transparent pb-px transition group-hover:border-primary-600 dark:group-hover:border-primary-300 motion-reduce:transition-none">

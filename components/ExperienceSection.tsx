@@ -231,18 +231,15 @@ const ExperienceSection = () => {
             <a
               className="inline-flex items-center font-medium leading-tight text-slate-800 dark:text-slate-100 hover:text-primary-600 dark:hover:text-primary-300 focus-visible:text-primary-600 dark:focus-visible:text-primary-300 group"
               aria-label="View Full Résumé (opens in a new tab)"
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1uqP-YWDO2jZ5ZcWroBDAUHJhOkQx43FQ/view?usp=drive_link"
               target="_blank"
               rel="noreferrer noopener"
             >
               <span>
                 <span className="border-b border-transparent pb-px transition group-hover:border-primary-600 dark:group-hover:border-primary-300 motion-reduce:transition-none">
-                  View Full
+                  View Full Résumé
                 </span>
                 <span className="whitespace-nowrap">
-                  <span className="border-b border-transparent pb-px transition group-hover:border-primary-600 dark:group-hover:border-primary-300 motion-reduce:transition-none">
-                    Résumé
-                  </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
