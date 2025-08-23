@@ -5,12 +5,13 @@ import Link from 'next/link';
 import { getArticleBySlug } from '@/http/article.http';
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   try {
-    const article = await getArticleBySlug(params.slug);
+    const { slug } = await params;
+    const article = await getArticleBySlug(slug);
     
     return {
       title: `${article.title} | Ahmad's Blog`,
@@ -35,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         images: [article.image.src],
       },
     };
-  } catch (error) {
+  } catch {
     return {
       title: 'Article Not Found',
       description: 'The requested article could not be found.',
@@ -47,8 +48,9 @@ export default async function ArticlePage({ params }: Props) {
   let article: Article;
   
   try {
-    article = await getArticleBySlug(params.slug);
-  } catch (error) {
+    const { slug } = await params;
+    article = await getArticleBySlug(slug);
+  } catch {
     notFound();
   }
 
