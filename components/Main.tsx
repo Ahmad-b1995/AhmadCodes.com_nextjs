@@ -3,7 +3,7 @@ import AboutSection from './AboutSection';
 import ExperienceSection from './ExperienceSection';
 import Blog from './Blog';
 
-const Main = () => {
+const Main = async () => {
     return (
         <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
             <AboutSection />
